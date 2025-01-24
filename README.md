@@ -3,7 +3,10 @@ Probe](https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.ht
 for flashing and debugging ARM processors via SWD.
 
 Raspberry Pi Debug Probe schematic:
-    <https://datasheets.raspberrypi.com/debug/raspberry-pi-debug-probe-schematics.pdf>
+<https://datasheets.raspberrypi.com/debug/raspberry-pi-debug-probe-schematics.pdf>
+
+Raspberry Pi Debug Probe mechanical drawing:
+<https://datasheets.raspberrypi.com/debug/raspberry-pi-debug-probe-mechanical-drawing.pdf>
 
 
 # Connectors
@@ -11,8 +14,7 @@ Raspberry Pi Debug Probe schematic:
 
 ## Raspberry Pi Debug Probe
 
-The Raspberry Pi Debug Probe uses a compact 3-pin "SH"
-connector.
+The Raspberry Pi Debug Probe uses a compact 3-pin "JST SH" connector.
 
 Debug Probe datasheet incl connector:
     <https://datasheets.raspberrypi.com/debug/debug-connector-specification.pdf>
@@ -30,7 +32,7 @@ uses a 2x5 1.27 mm pitch (high density) connector, e.g. HAB-VCR-010-LF.
 To connect the Debug Probe to the ARM connector i use the [Olimex ARM JTAG
 adapter board](https://www.olimex.com/Products/ARM/JTAG/ARM-JTAG-20-10/).
 
-* use the "SH to 3 male pins" cable of the Debug Probe
+* use the "JST SH to 3 male pins" cable of the Debug Probe
 * connect to the 2x10 2.54 mm pitch connector of the ARM JTAG adapter board
 * Black to any of pins 4, 6, 8, 10, or 12
 * Orange (SWDCLK) to pin 9 on the adapter
