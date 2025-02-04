@@ -32,11 +32,15 @@ uses a 2x5 1.27 mm pitch (high density) connector, e.g. HAB-VCR-010-LF.
 To connect the Debug Probe to the ARM connector i use the [Olimex ARM JTAG
 adapter board](https://www.olimex.com/Products/ARM/JTAG/ARM-JTAG-20-10/).
 
-* use the "JST SH to 3 male pins" cable of the Debug Probe
-* connect to the 2x10 2.54 mm pitch connector of the ARM JTAG adapter board
-* Black to any of pins 4, 6, 8, 10, or 12
-* Orange (SWDCLK) to pin 9 on the adapter
-* Yellow (SWDDIO) to pin 7 on the adapter
+Use the "JST SH to 3 male pins" cable that comes with the Debug Probe.
+Connect the pins to the 2x10 2.54 mm pitch connector of the ARM JTAG
+adapter board:
+
+| Signal | Debug Probe | Olimex ARM JTAG adapter |
+| ------ | ----------- | ----------------------- |
+| SWDCLK | Orange      | pin 9                   |
+| SWDDIO | Yellow      | pin 7                   |
+| Ground | Black       | any of pins 4, 6, 8, 10, or 12 |
 
 
 # Software
