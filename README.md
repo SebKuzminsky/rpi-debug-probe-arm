@@ -46,3 +46,12 @@ adapter board:
 # Software
 
 Needs probe-rs 0.26 or newer.
+
+
+# Enclosure
+
+Assemble the enclosure using two M3 heat-set threaded inserts and
+two button-head M3 screws.  I prefer to use nylon screws so that the
+outside of the enclosure is electrically non-conductive, but the screw
+holes are countersunk so that the heads are recessed below the surface,
+so you do you.
