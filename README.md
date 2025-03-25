@@ -43,6 +43,26 @@ adapter board:
 | Ground | Black       | any of pins 4, 6, 8, 10, or 12 |
 
 
+# Firmware
+
+As of March 2025, Raspberry Pi Debug Probe ships
+with old firmware with some known bugs, e.g.
+<https://github.com/probe-rs/probe-rs/issues/2950#issuecomment-2613812040>.
+
+The firmware upgrade procedure is:
+
+- Check that it has the old version: `lsusb -v -d 2e8a:000c | grep bcdDevice`
+
+- Download the latest Raspberry Pi Debug Probe `debugprobe.uf2` file
+  from here: <https://github.com/raspberrypi/debugprobe/releases/latest>
+
+- Hold the Raspberry Pi Debug Probe "BOOTSEL" button while plugging in the USB.
+
+- Copy the `debugprobe.uf2` file to the Debug Probe.
+
+- Verify the new version: `lsusb -v -d 2e8a:000c | grep bcdDevice`
+
+
 # Software
 
 Needs probe-rs 0.26 or newer.
